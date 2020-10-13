@@ -1,0 +1,28 @@
+.projectsBlock{
+    height: 70vh;
+    background-color: tomato;
+}
+.projectsContainer {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projectsTitle {
+    background-color: cornflowerblue;
+
+}
+
+.projects{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+

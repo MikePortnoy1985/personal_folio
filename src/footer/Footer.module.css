@@ -1,0 +1,30 @@
+.footerBlock{
+    height: 30vh;
+    background-color: sandybrown;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+.ulContainer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerUl{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.paragraph{
+
+
+}
