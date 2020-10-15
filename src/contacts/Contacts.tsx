@@ -9,20 +9,18 @@ const Contacts = () => {
 				<h2 className={s.title}> Contact </h2>
 				<div className={s.formContainer}>
 					<form>
-						<div>
-							<div className={s.formContainer}>
-								<label>Name</label>
-								<input />
-							</div>
-							<div className={s.formContainer}>
-								<label>Email address</label>
-								<input />
-							</div>
-							<div className={s.formContainer}>
-								<textarea></textarea>
-							</div>
-							<button>Send Message</button>
+						<div className={s.formContainer}>
+							<label>Name</label>
+							<input />
 						</div>
+						<div className={s.formContainer}>
+							<label>Email address</label>
+							<input />
+						</div>
+						<div className={s.formContainer}>
+							<textarea></textarea>
+						</div>
+						<button>Send Message</button>
 					</form>
 				</div>
 			</div>
