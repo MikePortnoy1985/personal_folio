@@ -7,13 +7,11 @@
     align-items: center;
     text-align: justify;
 }
-
 .icon{
     height: 60px;
     width: 60px;
     background-color: coral;
 }
-
 .description {
     padding: 15px;
 }

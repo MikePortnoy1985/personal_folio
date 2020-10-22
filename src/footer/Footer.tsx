@@ -13,19 +13,19 @@ const Footer = () => {
 				</div>
 				<div className={s.ulContainer}>
 					<ul className={s.footerUl}>
-						<li>
+						<li className={s.linkBlock}>
 							<a>Facebook</a>
 						</li>
-						<li>
+						<li className={s.linkBlock}>
 							<a>Twitter</a>
 						</li>
-						<li>
+						<li className={s.linkBlock}>
 							<a>Dribble</a>
 						</li>
-						<li>
+						<li className={s.linkBlock}>
 							<a>Linkedin</a>
 						</li>
-						<li>
+						<li className={s.linkBlock}>
 							<a>Pinterest</a>
 						</li>
 					</ul>
