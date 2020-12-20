@@ -1,0 +1,15 @@
+@import 'Variables';
+@import 'Mixins';
+@import '../../header/Header.module';
+@import '../../main/Main.module';
+@import '../../skills/Skills.module';
+@import '../../freelancer/Freelancer.module';
+@import '../error/Error.module';
+@import '../../contacts/Contacts.module';
+@import '../../footer/Footer.module';
+
+.container
+{
+    position: relative;
+    width: 100%;
+}

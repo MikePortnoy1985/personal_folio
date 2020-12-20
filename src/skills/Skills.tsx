@@ -1,35 +1,69 @@
 import React from 'react'
 import Skill from './skill/Skill'
-import s from './Skills.module.css'
-import c from '../common/styles/Container.module.css'
+import s from './Skills.module.scss'
+import git from './logos/git-icon.svg'
+import js from './logos/javascript.svg'
+import ts from './logos/typescript.svg'
+import reactLogo from './logos/react-2.svg'
+import reduxLogo from './logos/redux.svg'
+import storybookLogo from './logos/storybook-1.svg'
+import rest from './logos/rest-api.svg'
 
 export type SkillsType = {
-	id: number
-	title: string
-	description: string
+   id: number
+   title: string
+   logo: string
 }
 
 const Skills = () => {
-	const skillsState: SkillsType[] = [
-		{ id: 1, title: 'HTML', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 2, title: 'CSS', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 3, title: 'Java-Script', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 4, title: 'React', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 5, title: 'Jest', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 6, title: 'Material-UI', description: 'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.' },
-		{ id: 7, title: 'Git', description: 'GitHub, BitBucket' },
-	]
+   const skillsState: SkillsType[] = [
+      {
+         id: 11,
+         title: 'JavaScript',
+         logo: js,
+      },
+      {
+         id: 12,
+         title: 'TypeScript',
+         logo: ts,
+      },
+      {
+         id: 13,
+         title: 'React',
+         logo: reactLogo,
+      },
+      {
+         id: 14,
+         title: 'Redux',
+         logo: reduxLogo,
+      },
+      {
+         id: 15,
+         title: 'REST API',
+         logo: rest,
+      },
+      {
+         id: 16,
+         title: 'Storybook',
+         logo: storybookLogo,
+      },
+      {
+         id: 7,
+         title: 'Git',
+         logo: git,
+      },
+   ]
 
-	let mappedSkills = skillsState.map((i) => <Skill id={i.id} title={i.title} description={i.description} />)
+   const mappedSkills = skillsState.map((i) => <Skill key={i.id} id={i.id} title={i.title} logo={i.logo} />)
 
-	return (
-		<div className={s.skillsBlock}>
-			<div className={`${c.container} ${s.skillsContainer}`}>
-				<h2 className={s.skillsTitle}>My Skills</h2>
-				<div className={s.skills}>{mappedSkills}</div>
-			</div>
-		</div>
-	)
+   return (
+      <section className={s.skillsBlock} id={'skills'}>
+         <div className={s.innerContainer}>
+            <h2 className={s.skillsTitle}>My Skills</h2>
+            <div className={s.skills}>{mappedSkills}</div>
+         </div>
+      </section>
+   )
 }
 
 export default Skills

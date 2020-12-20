@@ -1,0 +1,44 @@
+@import '../common/styles/Variables';
+@import '../common/styles/Mixins';
+
+.freelancerBlock {
+   width: 100%;
+   padding: 10vh 0 5vh;
+
+   background-color: $light-color;
+
+   .innerContainer {
+      flex-direction: column;
+
+      @include innerContainer;
+      .title {
+         font-size: 2.8rem;
+
+         position: relative;
+
+         margin-bottom: 50px;
+
+         text-transform: capitalize;
+
+         @include h3Title;
+
+         &::after {
+            position: absolute;
+            right: 10%;
+            bottom: -20px;
+            left: 10%;
+
+            width: 80%;
+            height: 1px;
+
+            content: '';
+            text-align: center;
+
+            background: $style-color;
+         }
+      }
+      .btn {
+         @include bottom;
+      }
+   }
+}
